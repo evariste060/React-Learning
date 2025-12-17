@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import Message from "./components/WelcomeMessage"
+import Hobbies from "./components/Hobbies"
+import CurrentDate from "./components/CurrentDate"
+import Button from "./components/CustomizeButton"
+import Profile from "./components/ProfileCard"
+import ListItems from "./components/ListItems"
+import ToggleOnOf from "./events/ToggleOnOf"
+import Counter from "./events/Counter"
+import ChangeColor from "./events/ChangeColor"
+export default function App(){
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <Message/>
+      <CurrentDate/>
+      <Hobbies/>
+      <Button color="green-700" text="Customized button "/>
+      <Profile name="Nkurunziza Evariste" age="21" email="Evariste060@gmailcom"/>
+      <ListItems/>
+      <ToggleOnOf/>
+      <Counter/>
+      {/* <ChangeColor/> */}
+    </div>
   )
 }
-
-export default App
