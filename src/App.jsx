@@ -13,12 +13,12 @@ export default function App(){
       <Message/>
       <CurrentDate/>
       <Hobbies/>
-      <Button color="green-700" text="Customized button "/>
+      <Button color="white" text="Customized button"/>
       <Profile name="Nkurunziza Evariste" age="21" email="Evariste060@gmailcom"/>
       <ListItems/>
       <ToggleOnOf/>
       <Counter/>
-      {/* <ChangeColor/> */}
+      <ChangeColor/>
     </div>
   )
 }
