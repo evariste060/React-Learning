@@ -23,6 +23,14 @@ import NotFound from "./routing/NotFound"
 import Blog from "./routing/blog"
 import BlogPost from "./routing/blogPost"
 import Lectures from "./RegistrationForm/Lectures"
+import StudentForm from "./RegistrationForm/Student"
+import DriverForm from "./RegistrationForm/Driver"
+import   ParentComponent from "./memo/memo1"
+import CounterWithList from "./memo/memo2"
+import MemoizedHeavyCalculation from "./memo/memo3"
+import MemoizedTodoList from "./memo/memo4"
+import LiveTimeWithStaticPar from "./memo/memo5"
+
 function Home(){
   return (
     <div>
@@ -43,7 +51,16 @@ function Home(){
       <FormValidation/>
       <MultiStepForm/>
       <CheckboxForm/>
+      <ParentComponent/>
+      <CounterWithList/>
+      <MemoizedHeavyCalculation/>
+      <MemoizedTodoList/>
+      <LiveTimeWithStaticPar/>
       <Lectures/>
+      <StudentForm/>
+      <DriverForm/>
+      
+
     </div>
   )
 }
