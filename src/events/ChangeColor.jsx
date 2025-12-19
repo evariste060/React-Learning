@@ -7,9 +7,6 @@ export default function changeColor() {
         onMouseLeave={()=>setHovered(false)}
         className={`h-20 mx-[20%]  ${hovered?"bg-green-500":"bg-blue-600"}`}
         >
-
-
-        </div>
-        
+        </div>    
     )
 }
